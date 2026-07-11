@@ -20,7 +20,7 @@ export default function AboutPage() {
           </div>
           <div className="relative mx-auto w-full max-w-md">
             <div className="absolute inset-8 rounded-full bg-[var(--secondary)]" />
-            <img src="/about-bruna.png" alt="Bruna segurando um buquê artesanal de flores em chenille" className="relative aspect-[3/4] w-full rounded-[28px] object-cover" />
+            <img src="/about-bruna.webp" alt="Bruna segurando um buquê artesanal de flores em chenille" className="relative aspect-[3/4] w-full rounded-[28px] object-cover" />
           </div>
         </section>
 
@@ -40,7 +40,7 @@ export default function AboutPage() {
 
         <section className="bg-[var(--surface-soft)] py-16 sm:py-20">
           <div className="mx-auto grid max-w-[1200px] items-center gap-10 px-5 sm:px-6 md:grid-cols-2 lg:gap-20">
-            <img src="/about-craft.png" alt="Processo artesanal de montagem de flores com hastes de chenille" className="aspect-[4/5] w-full rounded-[28px] object-cover" loading="lazy" />
+            <img src="/about-craft.webp" alt="Processo artesanal de montagem de flores com hastes de chenille" className="aspect-[4/5] w-full rounded-[28px] object-cover" loading="lazy" />
             <div>
               <div className="grid size-12 place-items-center rounded-2xl bg-white text-[var(--primary)]"><Flower2 size={23} /></div>
               <p className="mt-6 text-xs font-bold uppercase tracking-[.2em] text-[var(--primary)]">Flores que carregam sentimentos</p>
