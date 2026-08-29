@@ -1,2 +1,78 @@
-import { Clock, Sparkles } from 'lucide-react'; import type { Product } from '../../types/product'; import { BottomSheet } from '../ui/sheet'; import { Button } from '../ui/button'; import { QuantitySelector } from '../cart/QuantitySelector'; import { formatCurrency } from '../../lib/currency'
-export function ProductDetails({ product, open, onOpenChange, quantity, onAdd, onDecrease, onIncrease }: { product:Product | null; open:boolean; onOpenChange:(open:boolean)=>void; quantity:number; onAdd:()=>void; onDecrease:()=>void; onIncrease:()=>void }) { if (!product) return null; return <BottomSheet open={open} onOpenChange={onOpenChange} title={product.name}><div className="overflow-y-auto px-5 pb-[max(1.25rem,env(safe-area-inset-bottom))]"><img className="aspect-[16/10] w-full rounded-2xl object-cover bg-[var(--surface-soft)]" src={product.image} alt={product.name} onError={(event) => { event.currentTarget.src='/products/placeholder.svg' }} /><div className="py-5"><p className="text-xl font-bold text-[var(--primary)]">{product.priceLabel ? `${product.priceLabel} ` : ''}{formatCurrency(product.price)}</p><p className="mt-3 leading-6 text-[var(--text-secondary)]">{product.description}</p><div className="mt-4 space-y-2 text-sm text-[var(--text-secondary)]"><p className="flex items-center gap-2"><Clock size={17}/>Produção em até {product.productionDays} dias</p>{product.customizable && <p className="flex items-center gap-2"><Sparkles size={17}/>Personalizável em cores e embalagem</p>}</div><p className="mt-4 rounded-xl bg-[var(--surface-soft)] p-3 text-sm text-[var(--text-secondary)]">A disponibilidade e o valor final serão confirmados pelo WhatsApp.</p></div>{quantity > 0 ? <QuantitySelector quantity={quantity} onDecrease={onDecrease} onIncrease={onIncrease} /> : <Button className="w-full" onClick={onAdd} disabled={!product.available}>{product.available ? 'Adicionar ao pedido' : 'Produto indisponível'}</Button>}</div></BottomSheet> }
+import { Clock, Sparkles } from "lucide-react";
+import type { Product } from "../../types/product";
+import { BottomSheet } from "../ui/sheet";
+import { Button } from "../ui/button";
+import { QuantitySelector } from "../cart/QuantitySelector";
+import { formatCurrency } from "../../lib/currency";
+export function ProductDetails({
+  product,
+  open,
+  onOpenChange,
+  quantity,
+  onAdd,
+  onDecrease,
+  onIncrease,
+}: {
+  product: Product | null;
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
+  quantity: number;
+  onAdd: () => void;
+  onDecrease: () => void;
+  onIncrease: () => void;
+}) {
+  if (!product) return null;
+  return (
+    <BottomSheet open={open} onOpenChange={onOpenChange} title={product.name}>
+      <div className="overflow-y-auto px-5 pb-[max(1.25rem,env(safe-area-inset-bottom))]">
+        <img
+          className="aspect-[16/10] w-full rounded-2xl object-cover bg-[var(--surface-soft)]"
+          src={product.image}
+          alt={product.name}
+          onError={(event) => {
+            event.currentTarget.src = "/products/placeholder.svg";
+          }}
+        />
+        <div className="py-5">
+          <p className="text-xl font-bold text-[var(--primary)]">
+            {product.priceLabel ? `${product.priceLabel} ` : ""}
+            {formatCurrency(product.price)}
+          </p>
+          <p className="mt-3 leading-6 text-[var(--text-secondary)]">
+            {product.description}
+          </p>
+          <div className="mt-4 space-y-2 text-sm text-[var(--text-secondary)]">
+            <p className="flex items-center gap-2">
+              <Clock size={17} />
+              Produção em até {product.productionDays} dias
+            </p>
+            {product.customizable && (
+              <p className="flex items-center gap-2">
+                <Sparkles size={17} />
+                Personalizável em cores e embalagem
+              </p>
+            )}
+          </div>
+          <p className="mt-4 rounded-xl bg-[var(--surface-soft)] p-3 text-sm text-[var(--text-secondary)]">
+            A disponibilidade e o valor final serão confirmados pelo WhatsApp.
+          </p>
+        </div>
+        {quantity > 0 ? (
+          <QuantitySelector
+            quantity={quantity}
+            onDecrease={onDecrease}
+            onIncrease={onIncrease}
+          />
+        ) : (
+          <Button
+            className="w-full"
+            onClick={onAdd}
+            disabled={!product.available}
+          >
+            {product.available ? "Adicionar ao pedido" : "Produto indisponível"}
+          </Button>
+        )}
+      </div>
+    </BottomSheet>
+  );
+}

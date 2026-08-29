@@ -1,2 +1,38 @@
-import { Minus, Plus } from 'lucide-react'; import { Button } from '../ui/button'
-export function QuantitySelector({ quantity, onDecrease, onIncrease }: { quantity:number; onDecrease:()=>void; onIncrease:()=>void }) { return <div className="flex h-11 items-center rounded-xl border border-[var(--border)] bg-white"><Button variant="ghost" className="size-10 min-h-0 rounded-xl p-0" onClick={onDecrease} aria-label="Diminuir quantidade"><Minus size={16}/></Button><span className="min-w-7 text-center text-sm font-bold" aria-live="polite">{quantity}</span><Button variant="ghost" className="size-10 min-h-0 rounded-xl p-0" onClick={onIncrease} aria-label="Aumentar quantidade"><Plus size={16}/></Button></div> }
+import { Minus, Plus } from "lucide-react";
+import { Button } from "../ui/button";
+export function QuantitySelector({
+  quantity,
+  onDecrease,
+  onIncrease,
+}: {
+  quantity: number;
+  onDecrease: () => void;
+  onIncrease: () => void;
+}) {
+  return (
+    <div className="flex h-11 items-center rounded-xl border border-[var(--border)] bg-white">
+      <Button
+        variant="ghost"
+        className="size-10 min-h-0 rounded-xl p-0"
+        onClick={onDecrease}
+        aria-label="Diminuir quantidade"
+      >
+        <Minus size={16} />
+      </Button>
+      <span
+        className="min-w-7 text-center text-sm font-bold"
+        aria-live="polite"
+      >
+        {quantity}
+      </span>
+      <Button
+        variant="ghost"
+        className="size-10 min-h-0 rounded-xl p-0"
+        onClick={onIncrease}
+        aria-label="Aumentar quantidade"
+      >
+        <Plus size={16} />
+      </Button>
+    </div>
+  );
+}

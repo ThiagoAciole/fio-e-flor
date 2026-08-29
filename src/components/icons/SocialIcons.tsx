@@ -1,9 +1,9 @@
-import { MessageCircle, Phone } from 'lucide-react'
+import { MessageCircle, Phone } from "lucide-react";
 
 type SocialIconProps = {
-  size?: number
-  className?: string
-}
+  size?: number;
+  className?: string;
+};
 
 export function InstagramIcon({ size = 20, className }: SocialIconProps) {
   return (
@@ -13,7 +13,7 @@ export function InstagramIcon({ size = 20, className }: SocialIconProps) {
       viewBox="0 0 94 94"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={`shrink-0 ${className ?? ''}`}
+      className={`shrink-0 ${className ?? ""}`}
       aria-hidden="true"
     >
       <path
@@ -21,14 +21,22 @@ export function InstagramIcon({ size = 20, className }: SocialIconProps) {
         fill="currentColor"
       />
     </svg>
-  )
+  );
 }
 
 export function WhatsAppIcon({ size = 20, className }: SocialIconProps) {
   return (
-    <span className={`relative inline-flex shrink-0 items-center justify-center ${className ?? ''}`} style={{ width: size, height: size }} aria-hidden="true">
-      <MessageCircle className="absolute inset-0" size={size} strokeWidth={1.8} />
+    <span
+      className={`relative inline-flex shrink-0 items-center justify-center ${className ?? ""}`}
+      style={{ width: size, height: size }}
+      aria-hidden="true"
+    >
+      <MessageCircle
+        className="absolute inset-0"
+        size={size}
+        strokeWidth={1.8}
+      />
       <Phone size={Math.round(size * 0.48)} strokeWidth={2} />
     </span>
-  )
+  );
 }

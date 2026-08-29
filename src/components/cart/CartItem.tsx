@@ -1,2 +1,59 @@
-import { Trash2 } from 'lucide-react'; import type { Product } from '../../types/product'; import { formatCurrency } from '../../lib/currency'; import { QuantitySelector } from './QuantitySelector'; import { Button } from '../ui/button'
-export function CartItem({ product, quantity, onDecrease, onIncrease, onRemove }: { product:Product; quantity:number; onDecrease:()=>void; onIncrease:()=>void; onRemove:()=>void }) { return <div className="flex gap-3 py-4"><img className="size-16 rounded-xl object-cover bg-[var(--surface-soft)]" src={product.image} alt="" onError={(event) => { event.currentTarget.src='/products/placeholder.svg' }} /><div className="min-w-0 flex-1"><div className="flex justify-between gap-2"><div><h3 className="text-sm font-bold">{product.name}</h3><p className="mt-0.5 text-xs text-[var(--text-secondary)]">{formatCurrency(product.price)} cada</p></div><Button variant="ghost" className="size-10 min-h-0 rounded-full p-0 text-[var(--danger)]" onClick={onRemove} aria-label={`Remover ${product.name}`}><Trash2 size={17}/></Button></div><div className="mt-3 flex items-center justify-between"><QuantitySelector quantity={quantity} onDecrease={onDecrease} onIncrease={onIncrease}/><span className="text-sm font-bold">{formatCurrency(product.price * quantity)}</span></div></div></div> }
+import { Trash2 } from "lucide-react";
+import type { Product } from "../../types/product";
+import { formatCurrency } from "../../lib/currency";
+import { QuantitySelector } from "./QuantitySelector";
+import { Button } from "../ui/button";
+export function CartItem({
+  product,
+  quantity,
+  onDecrease,
+  onIncrease,
+  onRemove,
+}: {
+  product: Product;
+  quantity: number;
+  onDecrease: () => void;
+  onIncrease: () => void;
+  onRemove: () => void;
+}) {
+  return (
+    <div className="flex gap-3 py-4">
+      <img
+        className="size-16 rounded-xl object-cover bg-[var(--surface-soft)]"
+        src={product.image}
+        alt=""
+        onError={(event) => {
+          event.currentTarget.src = "/products/placeholder.svg";
+        }}
+      />
+      <div className="min-w-0 flex-1">
+        <div className="flex justify-between gap-2">
+          <div>
+            <h3 className="text-sm font-bold">{product.name}</h3>
+            <p className="mt-0.5 text-xs text-[var(--text-secondary)]">
+              {formatCurrency(product.price)} cada
+            </p>
+          </div>
+          <Button
+            variant="ghost"
+            className="size-10 min-h-0 rounded-full p-0 text-[var(--danger)]"
+            onClick={onRemove}
+            aria-label={`Remover ${product.name}`}
+          >
+            <Trash2 size={17} />
+          </Button>
+        </div>
+        <div className="mt-3 flex items-center justify-between">
+          <QuantitySelector
+            quantity={quantity}
+            onDecrease={onDecrease}
+            onIncrease={onIncrease}
+          />
+          <span className="text-sm font-bold">
+            {formatCurrency(product.price * quantity)}
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+}

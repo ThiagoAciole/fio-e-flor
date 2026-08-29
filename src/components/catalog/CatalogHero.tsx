@@ -16,9 +16,10 @@ export function CatalogHero() {
           <span>lembranças Eternas</span>
         </h1>
         <p className="mt-5 max-w-md text-[15px] leading-7 text-[var(--text-secondary)] sm:text-base">
-          Conheça nossas flores artesanais feitas à mão com hastes de chenille, criadas para eternizar sentimentos em cada detalhe.
+          Conheça nossas flores artesanais feitas à mão com hastes de chenille,
+          criadas para eternizar sentimentos em cada detalhe.
         </p>
       </div>
     </section>
-  )
+  );
 }
