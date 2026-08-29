@@ -1,0 +1,34 @@
+[
+  {
+    "id": "girassois",
+    "name": "Girassóis"
+  },
+  {
+    "id": "lirios",
+    "name": "Lírios"
+  },
+  {
+    "id": "enrolados",
+    "name": "Enrolados"
+  },
+  {
+    "id": "van-gogh",
+    "name": "Van Gogh"
+  },
+  {
+    "id": "tematicos",
+    "name": "Temáticos"
+  },
+  {
+    "id": "moranguinho",
+    "name": "Moranguinho"
+  },
+  {
+    "id": "jardim-azul",
+    "name": "Jardim Azul"
+  },
+  {
+    "id": "flor-de-lotus",
+    "name": "Flor de Lótus"
+  }
+]

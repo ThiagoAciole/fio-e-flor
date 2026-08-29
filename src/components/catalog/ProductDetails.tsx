@@ -1,4 +1,3 @@
-import { Clock, Sparkles } from "lucide-react";
 import type { Product } from "../../types/product";
 import { BottomSheet } from "../ui/sheet";
 import { Button } from "../ui/button";
@@ -41,18 +40,6 @@ export function ProductDetails({
           <p className="mt-3 leading-6 text-[var(--text-secondary)]">
             {product.description}
           </p>
-          <div className="mt-4 space-y-2 text-sm text-[var(--text-secondary)]">
-            <p className="flex items-center gap-2">
-              <Clock size={17} />
-              Produção em até {product.productionDays} dias
-            </p>
-            {product.customizable && (
-              <p className="flex items-center gap-2">
-                <Sparkles size={17} />
-                Personalizável em cores e embalagem
-              </p>
-            )}
-          </div>
           <p className="mt-4 rounded-xl bg-[var(--surface-soft)] p-3 text-sm text-[var(--text-secondary)]">
             A disponibilidade e o valor final serão confirmados pelo WhatsApp.
           </p>
@@ -67,9 +54,9 @@ export function ProductDetails({
           <Button
             className="w-full"
             onClick={onAdd}
-            disabled={!product.available}
+            disabled={!product.sellable}
           >
-            {product.available ? "Adicionar ao pedido" : "Produto indisponível"}
+            {product.sellable ? "Adicionar ao pedido" : "Produto indisponível"}
           </Button>
         )}
       </div>

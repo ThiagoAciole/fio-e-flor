@@ -1,9 +1,8 @@
-import type { Category } from "../types/category";
-export const categories: Category[] = [
-  { id: "featured", label: "Mais pedidos" },
-  { id: "buques", label: "Buquês" },
-  { id: "flores", label: "Flores" },
-  { id: "arranjos", label: "Arranjos" },
-  { id: "presentes", label: "Presentes" },
-  { id: "personalizados", label: "Personalizados" },
-];
+import type { Category } from "../types/product";
+export const categories = [
+  { id: "all", name: "Todos" },
+  { id: "buques", name: "Buquês" },
+  { id: "flores", name: "Flores" },
+  { id: "arranjos", name: "Arranjos" },
+  { id: "presentes", name: "Presentes" },
+] satisfies Array<Category | { id: "all"; name: string }>;

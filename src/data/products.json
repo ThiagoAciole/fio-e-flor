@@ -1,0 +1,566 @@
+[
+  {
+    "id": "girassol-mini",
+    "name": "Mini Girassol",
+    "description": "",
+    "category": {
+      "id": "flores",
+      "name": "Flores"
+    },
+    "price": 29.9,
+    "image": "/catalog/girassois/mini-girassol.webp",
+    "sellable": true,
+    "collections": [
+      {
+        "id": "girassois",
+        "name": "Girassóis"
+      }
+    ]
+  },
+  {
+    "id": "girassol-buque-unitario",
+    "name": "Buquê Unitário Girassol",
+    "description": "",
+    "category": {
+      "id": "buques",
+      "name": "Buquês"
+    },
+    "price": 49.9,
+    "image": "/catalog/girassois/buque-unitario.webp",
+    "sellable": true,
+    "collections": [
+      {
+        "id": "girassois",
+        "name": "Girassóis"
+      }
+    ]
+  },
+  {
+    "id": "lirio-unitario",
+    "name": "Lírio Unitário",
+    "description": "",
+    "category": {
+      "id": "flores",
+      "name": "Flores"
+    },
+    "price": 15.9,
+    "image": "/catalog/lirios/lirio-unitario.webp",
+    "sellable": true,
+    "collections": [
+      {
+        "id": "lirios",
+        "name": "Lírios"
+      }
+    ],
+    "variants": [
+      {
+        "id": "rosa",
+        "name": "Rosa"
+      },
+      {
+        "id": "vermelho",
+        "name": "Vermelho"
+      },
+      {
+        "id": "amarelo",
+        "name": "Amarelo"
+      },
+      {
+        "id": "verde",
+        "name": "Verde"
+      },
+      {
+        "id": "azul-claro",
+        "name": "Azul claro"
+      },
+      {
+        "id": "lilas",
+        "name": "Lilás"
+      },
+      {
+        "id": "roxo",
+        "name": "Roxo"
+      },
+      {
+        "id": "branco",
+        "name": "Branco"
+      },
+      {
+        "id": "rosa-com-branco",
+        "name": "Rosa com branco"
+      },
+      {
+        "id": "vermelho-com-branco",
+        "name": "Vermelho com branco"
+      },
+      {
+        "id": "amarelo-com-branco",
+        "name": "Amarelo com branco"
+      },
+      {
+        "id": "verde-com-branco",
+        "name": "Verde com branco"
+      },
+      {
+        "id": "azul-claro-com-branco",
+        "name": "Azul claro com branco"
+      },
+      {
+        "id": "lilas-com-branco",
+        "name": "Lilás com branco"
+      },
+      {
+        "id": "roxo-com-branco",
+        "name": "Roxo com branco"
+      }
+    ]
+  },
+  {
+    "id": "chaveiro-girassol",
+    "name": "Chaveiro Girassol",
+    "description": "",
+    "category": {
+      "id": "chaveiros",
+      "name": "Chaveiros"
+    },
+    "price": 15.9,
+    "image": "/catalog/chaveiros/girassol.webp",
+    "sellable": true
+  },
+  {
+    "id": "chaveiro-margarida",
+    "name": "Chaveiro Margarida",
+    "description": "",
+    "category": {
+      "id": "chaveiros",
+      "name": "Chaveiros"
+    },
+    "price": 15.9,
+    "image": "/catalog/chaveiros/margarida.webp",
+    "sellable": true
+  },
+  {
+    "id": "chaveiro-laco-roxo",
+    "name": "Chaveiro Laço Roxo",
+    "description": "",
+    "category": {
+      "id": "chaveiros",
+      "name": "Chaveiros"
+    },
+    "price": 9.9,
+    "image": "/catalog/chaveiros/laco-roxo.webp",
+    "sellable": true
+  },
+  {
+    "id": "chaveiro-laco-rosa",
+    "name": "Chaveiro Laço Rosa",
+    "description": "",
+    "category": {
+      "id": "chaveiros",
+      "name": "Chaveiros"
+    },
+    "price": 9.9,
+    "image": "/catalog/chaveiros/laco-rosa.webp",
+    "sellable": true
+  },
+  {
+    "id": "chaveiro-arco-iris",
+    "name": "Chaveiro Arco-íris",
+    "description": "",
+    "category": {
+      "id": "chaveiros",
+      "name": "Chaveiros"
+    },
+    "price": 15.9,
+    "image": "/catalog/chaveiros/arco-iris.webp",
+    "sellable": true
+  },
+  {
+    "id": "chaveiro-flor",
+    "name": "Chaveiro Flor",
+    "description": "",
+    "category": {
+      "id": "chaveiros",
+      "name": "Chaveiros"
+    },
+    "price": 15.9,
+    "image": "/catalog/chaveiros/flor.webp",
+    "sellable": true
+  },
+  {
+    "id": "chaveiro-morango",
+    "name": "Chaveiro Morango",
+    "description": "",
+    "category": {
+      "id": "chaveiros",
+      "name": "Chaveiros"
+    },
+    "price": 15.9,
+    "image": "/catalog/chaveiros/morango.webp",
+    "sellable": true
+  },
+  {
+    "id": "chaveiro-olho-grego",
+    "name": "Chaveiro Olho Grego",
+    "description": "",
+    "category": {
+      "id": "chaveiros",
+      "name": "Chaveiros"
+    },
+    "price": 15.9,
+    "image": "/catalog/chaveiros/olho-grego.webp",
+    "sellable": true
+  },
+  {
+    "id": "enrolados-buque",
+    "name": "Buquê Enrolados",
+    "description": "",
+    "category": {
+      "id": "buques",
+      "name": "Buquês"
+    },
+    "price": 109.9,
+    "image": "/catalog/enrolados/buque.webp",
+    "sellable": true,
+    "collections": [
+      {
+        "id": "enrolados",
+        "name": "Enrolados"
+      }
+    ]
+  },
+  {
+    "id": "enrolados-vaso",
+    "name": "Vaso Enrolados",
+    "description": "",
+    "category": {
+      "id": "arranjos",
+      "name": "Arranjos"
+    },
+    "price": 159.9,
+    "image": "/catalog/enrolados/vaso.webp",
+    "sellable": true,
+    "collections": [
+      {
+        "id": "enrolados",
+        "name": "Enrolados"
+      }
+    ]
+  },
+  {
+    "id": "enrolados-luminaria",
+    "name": "Luminária Enrolados",
+    "description": "",
+    "category": {
+      "id": "luminarias",
+      "name": "Luminárias"
+    },
+    "price": 129.9,
+    "image": "/catalog/enrolados/luminaria.webp",
+    "sellable": true,
+    "collections": [
+      {
+        "id": "enrolados",
+        "name": "Enrolados"
+      }
+    ]
+  },
+  {
+    "id": "van-gogh-girassois",
+    "name": "Buquê Girassóis de Van Gogh",
+    "description": "",
+    "category": {
+      "id": "buques",
+      "name": "Buquês"
+    },
+    "price": 109.9,
+    "image": "/catalog/van-gogh/girassois.webp",
+    "sellable": true,
+    "collections": [
+      {
+        "id": "van-gogh",
+        "name": "Van Gogh"
+      },
+      {
+        "id": "girassois",
+        "name": "Girassóis"
+      }
+    ]
+  },
+  {
+    "id": "van-gogh-vaso",
+    "name": "Vaso Van Gogh",
+    "description": "",
+    "category": {
+      "id": "arranjos",
+      "name": "Arranjos"
+    },
+    "price": 159.9,
+    "image": "/catalog/van-gogh/vaso.webp",
+    "sellable": true,
+    "collections": [
+      {
+        "id": "van-gogh",
+        "name": "Van Gogh"
+      }
+    ]
+  },
+  {
+    "id": "van-gogh-noite-estrelada",
+    "name": "Buquê Noite Estrelada",
+    "description": "",
+    "category": {
+      "id": "buques",
+      "name": "Buquês"
+    },
+    "price": 109.9,
+    "image": "/catalog/van-gogh/noite-estrelada.webp",
+    "sellable": true,
+    "collections": [
+      {
+        "id": "van-gogh",
+        "name": "Van Gogh"
+      }
+    ]
+  },
+  {
+    "id": "tema-homem-aranha",
+    "name": "Homem-Aranha",
+    "description": "",
+    "category": {
+      "id": "buques",
+      "name": "Buquês"
+    },
+    "price": 109.9,
+    "image": "/catalog/tematicos/homem-aranha.webp",
+    "sellable": true,
+    "collections": [
+      {
+        "id": "tematicos",
+        "name": "Temáticos"
+      }
+    ]
+  },
+  {
+    "id": "tema-harry-potter",
+    "name": "Harry Potter",
+    "description": "",
+    "category": {
+      "id": "buques",
+      "name": "Buquês"
+    },
+    "price": 109.9,
+    "image": "/catalog/tematicos/harry-potter.webp",
+    "sellable": true,
+    "collections": [
+      {
+        "id": "tematicos",
+        "name": "Temáticos"
+      }
+    ]
+  },
+  {
+    "id": "tema-batman",
+    "name": "Batman",
+    "description": "",
+    "category": {
+      "id": "buques",
+      "name": "Buquês"
+    },
+    "price": 109.9,
+    "image": "/catalog/tematicos/batman.webp",
+    "sellable": true,
+    "collections": [
+      {
+        "id": "tematicos",
+        "name": "Temáticos"
+      }
+    ]
+  },
+  {
+    "id": "tema-banguela",
+    "name": "Banguela",
+    "description": "",
+    "category": {
+      "id": "buques",
+      "name": "Buquês"
+    },
+    "price": 109.9,
+    "image": "/catalog/tematicos/banguela.webp",
+    "sellable": true,
+    "collections": [
+      {
+        "id": "tematicos",
+        "name": "Temáticos"
+      }
+    ]
+  },
+  {
+    "id": "vaso-moranguinho",
+    "name": "Vaso da Moranguinho",
+    "description": "Um arranjo encantador que combina delicadeza, cores e o carinho da Moranguinho. Feito à mão para presentear ou deixar qualquer ambiente mais fofo.",
+    "category": {
+      "id": "arranjos",
+      "name": "Arranjos"
+    },
+    "price": 179.9,
+    "image": "/catalog/moranguinho/vaso.webp",
+    "sellable": true,
+    "collections": [
+      {
+        "id": "moranguinho",
+        "name": "Moranguinho"
+      }
+    ]
+  },
+  {
+    "id": "buque-lirios",
+    "name": "Buquê Lírios",
+    "description": "",
+    "category": {
+      "id": "buques",
+      "name": "Buquês"
+    },
+    "price": 89.9,
+    "image": "/catalog/buque-lirios/default.webp",
+    "sellable": true,
+    "collections": [
+      {
+        "id": "lirios",
+        "name": "Lírios"
+      }
+    ],
+    "variants": [
+      {
+        "id": "rosa",
+        "name": "Rosa"
+      },
+      {
+        "id": "vermelho",
+        "name": "Vermelho"
+      },
+      {
+        "id": "amarelo",
+        "name": "Amarelo"
+      },
+      {
+        "id": "verde",
+        "name": "Verde"
+      },
+      {
+        "id": "azul-claro",
+        "name": "Azul claro"
+      },
+      {
+        "id": "azul-escuro",
+        "name": "Azul escuro"
+      },
+      {
+        "id": "roxo",
+        "name": "Roxo"
+      },
+      {
+        "id": "lilas",
+        "name": "Lilás"
+      },
+      {
+        "id": "branco",
+        "name": "Branco"
+      }
+    ]
+  },
+  {
+    "id": "jardim-azul-1",
+    "name": "Jardim Azul — Opção 1",
+    "description": "",
+    "category": {
+      "id": "arranjos",
+      "name": "Arranjos"
+    },
+    "price": 129.9,
+    "image": "/catalog/jardim-azul/opcao-1.webp",
+    "sellable": true,
+    "collections": [
+      {
+        "id": "jardim-azul",
+        "name": "Jardim Azul"
+      }
+    ]
+  },
+  {
+    "id": "jardim-azul-2",
+    "name": "Jardim Azul — Opção 2",
+    "description": "",
+    "category": {
+      "id": "arranjos",
+      "name": "Arranjos"
+    },
+    "price": 159.9,
+    "image": "/catalog/jardim-azul/opcao-2.webp",
+    "sellable": true,
+    "collections": [
+      {
+        "id": "jardim-azul",
+        "name": "Jardim Azul"
+      }
+    ]
+  },
+  {
+    "id": "jardim-azul-3",
+    "name": "Jardim Azul — Opção 3",
+    "description": "",
+    "category": {
+      "id": "arranjos",
+      "name": "Arranjos"
+    },
+    "price": 179.9,
+    "image": "/catalog/jardim-azul/opcao-3.webp",
+    "sellable": true,
+    "collections": [
+      {
+        "id": "jardim-azul",
+        "name": "Jardim Azul"
+      }
+    ]
+  },
+  {
+    "id": "luminaria-flor-de-lotus",
+    "name": "Luminária Flor de Lótus",
+    "description": "Luz interna. Feito à mão com carinho. Símbolo de pureza e paz.",
+    "category": {
+      "id": "luminarias",
+      "name": "Luminárias"
+    },
+    "price": 89.9,
+    "image": "/catalog/flor-de-lotus/azul.webp",
+    "sellable": true,
+    "collections": [
+      {
+        "id": "flor-de-lotus",
+        "name": "Flor de Lótus"
+      }
+    ],
+    "variants": [
+      {
+        "id": "azul",
+        "name": "Azul"
+      },
+      {
+        "id": "roxo",
+        "name": "Roxo"
+      },
+      {
+        "id": "amarelo",
+        "name": "Amarelo"
+      },
+      {
+        "id": "vermelho",
+        "name": "Vermelho"
+      },
+      {
+        "id": "verde",
+        "name": "Verde"
+      }
+    ]
+  }
+]

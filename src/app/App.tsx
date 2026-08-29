@@ -26,7 +26,7 @@ export default function App() {
   const decrease = (productId: string) => dispatch({ type: 'DECREASE_ITEM', productId })
   const increase = (productId: string) => dispatch({ type: 'INCREASE_ITEM', productId })
   const clearCart = () => { dispatch({ type: 'CLEAR_CART' }); toast.success('Pedido limpo') }
-  const resetFilters = () => { setCategory('featured'); setQuery('') }
+  const resetFilters = () => { setCategory('all'); setQuery('') }
 
   return <div className="site-shell min-h-svh"><CatalogHeader /><CatalogHero /><main className={`mx-auto max-w-[1200px] px-4 sm:px-6 ${itemCount ? 'pb-28' : ''}`}><CategoryTabs active={category} onChange={setCategory} query={query} onQueryChange={setQuery}/><section id="catalogo" className="pt-7" aria-live="polite">{filteredProducts.length ? <ProductGrid products={filteredProducts} quantities={quantities} onOpen={setSelectedProduct} onAdd={add} onDecrease={decrease} onIncrease={increase}/> : <CatalogEmptyState hasSearch={Boolean(query)} onReset={resetFilters} />}</section></main><Footer/><CartBar quantity={itemCount} total={total} onOpen={() => setIsCartOpen(true)} onClear={clearCart}/><CartSheet open={isCartOpen} onOpenChange={setIsCartOpen}/><ProductDetails product={selectedProduct} open={Boolean(selectedProduct)} onOpenChange={(open) => { if (!open) setSelectedProduct(null) }} quantity={selectedProduct ? quantities[selectedProduct.id] ?? 0 : 0} onAdd={() => selectedProduct && add(selectedProduct.id)} onDecrease={() => selectedProduct && decrease(selectedProduct.id)} onIncrease={() => selectedProduct && increase(selectedProduct.id)}/></div>
 }

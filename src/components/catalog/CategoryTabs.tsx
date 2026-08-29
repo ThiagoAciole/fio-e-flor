@@ -1,24 +1,22 @@
 import {
   Flower2,
   Gift,
-  Heart,
+  LayoutGrid,
   PackageOpen,
   Search,
   Sparkles,
-  WandSparkles,
   X,
 } from "lucide-react";
 import { categories } from "../../data/categories";
-import type { CategoryFilter } from "../../types/category";
+import type { CategoryFilter } from "../../types/product";
 import { cn } from "../../lib/utils";
 
 const categoryIcons = {
-  featured: Heart,
+  all: LayoutGrid,
   buques: Flower2,
   flores: Sparkles,
   arranjos: PackageOpen,
   presentes: Gift,
-  personalizados: WandSparkles,
 };
 
 export function CategoryTabs({
@@ -78,7 +76,7 @@ export function CategoryTabs({
                   )}
                 >
                   <Icon size={15} strokeWidth={1.7} />
-                  {category.label}
+                  {category.name}
                 </button>
               );
             })}

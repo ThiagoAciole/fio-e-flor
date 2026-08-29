@@ -1,17 +1,30 @@
-export type ProductCategory =
-  "buques" | "flores" | "arranjos" | "presentes" | "personalizados";
+export type CategoryId = "buques" | "flores" | "arranjos" | "presentes";
+export type CategoryFilter = "all" | CategoryId;
+
+export type Category = {
+  id: CategoryId;
+  name: string;
+};
+
+export type Collection = {
+  id: string;
+  name: string;
+};
+
+export type Variant = {
+  id: string;
+  name: string;
+};
 
 export type Product = {
   id: string;
-  slug: string;
   name: string;
   description: string;
-  category: ProductCategory;
+  category: Category;
   price: number;
   priceLabel?: string;
   image: string;
-  customizable: boolean;
-  productionDays: number;
-  featured: boolean;
-  available: boolean;
+  sellable: boolean;
+  collections?: Collection[];
+  variants?: Variant[];
 };

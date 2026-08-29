@@ -24,7 +24,7 @@ export function ProductCard({
     <article className="product-card flex h-full flex-col">
       <div className="relative overflow-hidden rounded-[20px] bg-[var(--surface-soft)]">
         <img
-          className={`product-image aspect-square w-full object-cover ${product.available ? "" : "grayscale opacity-60"}`}
+          className={`product-image aspect-square w-full object-cover ${product.sellable ? "" : "grayscale opacity-60"}`}
           src={product.image}
           alt={product.name}
           onError={(event) => {
@@ -39,7 +39,7 @@ export function ProductCard({
           aria-label={`Ver detalhes de ${product.name}`}
         />
 
-        {product.available ? (
+        {product.sellable ? (
           quantity > 0 ? (
             <div className="absolute bottom-3 right-3 z-[2] flex h-12 items-center rounded-2xl border border-[var(--border)] bg-white text-[var(--text-primary)]">
               <button
