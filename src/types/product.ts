@@ -1,5 +1,5 @@
-export type CategoryId = "buques" | "flores" | "arranjos" | "presentes";
-export type CategoryFilter = "all" | CategoryId;
+export type CategoryId =
+  "buques" | "flores" | "arranjos" | "presentes" | "chaveiros" | "luminarias";
 
 export type Category = {
   id: CategoryId;
@@ -14,6 +14,7 @@ export type Collection = {
 export type Variant = {
   id: string;
   name: string;
+  image?: string;
 };
 
 export type Product = {
@@ -28,3 +29,8 @@ export type Product = {
   collections?: Collection[];
   variants?: Variant[];
 };
+
+export type ProductFilter =
+  | { type: "all" }
+  | { type: "category"; id: CategoryId }
+  | { type: "collection"; id: string };

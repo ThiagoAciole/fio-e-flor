@@ -1,10 +1,10 @@
-import { products } from "../../data/products";
+import { getProductById } from "../../data/catalog";
 import type { CartItem } from "./cart.types";
 export const cartQuantity = (items: CartItem[]) =>
   items.reduce((sum, item) => sum + item.quantity, 0);
 export const cartDetails = (items: CartItem[]) =>
   items.flatMap((item) => {
-    const product = products.find((entry) => entry.id === item.productId);
+    const product = getProductById(item.productId);
     return product
       ? [
           {

@@ -8,7 +8,7 @@
       "name": "Flores"
     },
     "price": 29.9,
-    "image": "/catalog/girassois/mini-girassol.webp",
+    "image": "/products/buque-girassol-mini.webp",
     "sellable": true,
     "collections": [
       {
@@ -26,7 +26,7 @@
       "name": "Buquês"
     },
     "price": 49.9,
-    "image": "/catalog/girassois/buque-unitario.webp",
+    "image": "/products/buque-girassol.webp",
     "sellable": true,
     "collections": [
       {
@@ -44,7 +44,7 @@
       "name": "Flores"
     },
     "price": 15.9,
-    "image": "/catalog/lirios/lirio-unitario.webp",
+    "image": "/products/lirios-uniti-rosa.webp",
     "sellable": true,
     "collections": [
       {
@@ -55,63 +55,78 @@
     "variants": [
       {
         "id": "rosa",
-        "name": "Rosa"
+        "name": "Rosa",
+        "image": "/products/lirios-uniti-rosa.webp"
       },
       {
         "id": "vermelho",
-        "name": "Vermelho"
+        "name": "Vermelho",
+        "image": "/products/lirios-uniti-vermelho.webp"
       },
       {
         "id": "amarelo",
-        "name": "Amarelo"
+        "name": "Amarelo",
+        "image": "/products/lirios-uniti-amarelo.webp"
       },
       {
         "id": "verde",
-        "name": "Verde"
+        "name": "Verde",
+        "image": "/products/lirios-uniti-verde.webp"
       },
       {
         "id": "azul-claro",
-        "name": "Azul claro"
+        "name": "Azul claro",
+        "image": "/products/lirios-uniti-azul.webp"
       },
       {
         "id": "lilas",
-        "name": "Lilás"
+        "name": "Lilás",
+        "image": "/products/lirios-uniti-lilas.webp"
       },
       {
         "id": "roxo",
-        "name": "Roxo"
+        "name": "Roxo",
+        "image": "/products/lirios-uniti-roxo.webp"
       },
       {
         "id": "branco",
-        "name": "Branco"
+        "name": "Branco",
+        "image": "/products/lirios-uniti-branco.webp"
       },
       {
         "id": "rosa-com-branco",
-        "name": "Rosa com branco"
+        "name": "Rosa com branco",
+        "image": "/products/lirios-uniti-br-rosa.webp"
       },
       {
         "id": "vermelho-com-branco",
-        "name": "Vermelho com branco"
+        "name": "Vermelho com branco",
+        "image": "/products/lirios-uniti-br-vermelho.webp"
       },
       {
         "id": "amarelo-com-branco",
-        "name": "Amarelo com branco"
+        "name": "Amarelo com branco",
+        "image": "/products/lirios-uniti-br-amarelo.webp"
       },
       {
         "id": "verde-com-branco",
-        "name": "Verde com branco"
+        "name": "Verde com branco",
+        "image": "/products/lirios-uniti-br-verde.webp"
       },
       {
         "id": "azul-claro-com-branco",
-        "name": "Azul claro com branco"
+        "name": "Azul claro com branco",
+        "image": "/products/lirios-uniti-br-azul.webp"
       },
       {
         "id": "lilas-com-branco",
-        "name": "Lilás com branco"
+        "name": "Lilás com branco",
+        "image": "/products/lirios-uniti-br-lilas.webp"
       },
       {
         "id": "roxo-com-branco",
-        "name": "Roxo com branco"
+        "name": "Roxo com branco",
+        "image": "/products/lirios-uniti-br-roxo.webp"
       }
     ]
   },
@@ -124,7 +139,7 @@
       "name": "Chaveiros"
     },
     "price": 15.9,
-    "image": "/catalog/chaveiros/girassol.webp",
+    "image": "/products/chaveiro-girassol.webp",
     "sellable": true
   },
   {
@@ -136,7 +151,7 @@
       "name": "Chaveiros"
     },
     "price": 15.9,
-    "image": "/catalog/chaveiros/margarida.webp",
+    "image": "/products/chaveiro-margarida.webp",
     "sellable": true
   },
   {
@@ -148,7 +163,7 @@
       "name": "Chaveiros"
     },
     "price": 9.9,
-    "image": "/catalog/chaveiros/laco-roxo.webp",
+    "image": "/products/chaveiro-laço.webp",
     "sellable": true
   },
   {
@@ -160,7 +175,7 @@
       "name": "Chaveiros"
     },
     "price": 9.9,
-    "image": "/catalog/chaveiros/laco-rosa.webp",
+    "image": "/products/chaveiro-laço.webp",
     "sellable": true
   },
   {
@@ -172,7 +187,7 @@
       "name": "Chaveiros"
     },
     "price": 15.9,
-    "image": "/catalog/chaveiros/arco-iris.webp",
+    "image": "/products/chaveiro-arcoiris.webp",
     "sellable": true
   },
   {
@@ -184,7 +199,7 @@
       "name": "Chaveiros"
     },
     "price": 15.9,
-    "image": "/catalog/chaveiros/flor.webp",
+    "image": "/products/chaveiro-lirio.webp",
     "sellable": true
   },
   {
@@ -196,7 +211,7 @@
       "name": "Chaveiros"
     },
     "price": 15.9,
-    "image": "/catalog/chaveiros/morango.webp",
+    "image": "/products/chaveiro-morango.webp",
     "sellable": true
   },
   {
@@ -208,7 +223,7 @@
       "name": "Chaveiros"
     },
     "price": 15.9,
-    "image": "/catalog/chaveiros/olho-grego.webp",
+    "image": "/products/chaveiro-olho-grego.webp",
     "sellable": true
   },
   {
@@ -220,7 +235,7 @@
       "name": "Buquês"
     },
     "price": 109.9,
-    "image": "/catalog/enrolados/buque.webp",
+    "image": "/products/buque-enrolados.webp",
     "sellable": true,
     "collections": [
       {
@@ -238,7 +253,7 @@
       "name": "Arranjos"
     },
     "price": 159.9,
-    "image": "/catalog/enrolados/vaso.webp",
+    "image": "/products/vazo-enrolados.webp",
     "sellable": true,
     "collections": [
       {
@@ -256,7 +271,7 @@
       "name": "Luminárias"
     },
     "price": 129.9,
-    "image": "/catalog/enrolados/luminaria.webp",
+    "image": "/products/luminaria-enrolados.webp",
     "sellable": true,
     "collections": [
       {
@@ -274,7 +289,7 @@
       "name": "Buquês"
     },
     "price": 109.9,
-    "image": "/catalog/van-gogh/girassois.webp",
+    "image": "/products/buque-girrasois-van-gogh.webp",
     "sellable": true,
     "collections": [
       {
@@ -296,7 +311,7 @@
       "name": "Arranjos"
     },
     "price": 159.9,
-    "image": "/catalog/van-gogh/vaso.webp",
+    "image": "/products/jarro-noite-estrelada.webp",
     "sellable": true,
     "collections": [
       {
@@ -314,7 +329,7 @@
       "name": "Buquês"
     },
     "price": 109.9,
-    "image": "/catalog/van-gogh/noite-estrelada.webp",
+    "image": "/products/buque-noite-estrelada.webp",
     "sellable": true,
     "collections": [
       {
@@ -332,7 +347,7 @@
       "name": "Buquês"
     },
     "price": 109.9,
-    "image": "/catalog/tematicos/homem-aranha.webp",
+    "image": "/products/buque-homem-aranha.webp",
     "sellable": true,
     "collections": [
       {
@@ -350,7 +365,7 @@
       "name": "Buquês"
     },
     "price": 109.9,
-    "image": "/catalog/tematicos/harry-potter.webp",
+    "image": "/products/buque-harry-potter.webp",
     "sellable": true,
     "collections": [
       {
@@ -368,7 +383,7 @@
       "name": "Buquês"
     },
     "price": 109.9,
-    "image": "/catalog/tematicos/batman.webp",
+    "image": "/products/buque-batman.webp",
     "sellable": true,
     "collections": [
       {
@@ -386,7 +401,7 @@
       "name": "Buquês"
     },
     "price": 109.9,
-    "image": "/catalog/tematicos/banguela.webp",
+    "image": "/products/buque-banguela.webp",
     "sellable": true,
     "collections": [
       {
@@ -404,12 +419,12 @@
       "name": "Arranjos"
     },
     "price": 179.9,
-    "image": "/catalog/moranguinho/vaso.webp",
+    "image": "/products/buque-jarro-moranguinho.webp",
     "sellable": true,
     "collections": [
       {
-        "id": "moranguinho",
-        "name": "Moranguinho"
+        "id": "tematicos",
+        "name": "Temáticos"
       }
     ]
   },
@@ -422,7 +437,7 @@
       "name": "Buquês"
     },
     "price": 89.9,
-    "image": "/catalog/buque-lirios/default.webp",
+    "image": "/products/buque-lirios-rosa.webp",
     "sellable": true,
     "collections": [
       {
@@ -433,52 +448,61 @@
     "variants": [
       {
         "id": "rosa",
-        "name": "Rosa"
+        "name": "Rosa",
+        "image": "/products/buque-lirios-rosa.webp"
       },
       {
         "id": "vermelho",
-        "name": "Vermelho"
+        "name": "Vermelho",
+        "image": "/products/buque-lirios-vermelho.webp"
       },
       {
         "id": "amarelo",
-        "name": "Amarelo"
+        "name": "Amarelo",
+        "image": "/products/buque-lirios-amarelo.webp"
       },
       {
         "id": "verde",
-        "name": "Verde"
+        "name": "Verde",
+        "image": "/products/buque-lirios-verde.webp"
       },
       {
         "id": "azul-claro",
-        "name": "Azul claro"
+        "name": "Azul claro",
+        "image": "/products/buque-lirios-azul-claro.webp"
       },
       {
         "id": "azul-escuro",
-        "name": "Azul escuro"
+        "name": "Azul escuro",
+        "image": "/products/buque-lirios-azul-escuro.webp"
       },
       {
         "id": "roxo",
-        "name": "Roxo"
+        "name": "Roxo",
+        "image": "/products/buque-lirios-roxo.webp"
       },
       {
         "id": "lilas",
-        "name": "Lilás"
+        "name": "Lilás",
+        "image": "/products/buque-lirios-lilas.webp"
       },
       {
         "id": "branco",
-        "name": "Branco"
+        "name": "Branco",
+        "image": "/products/buque-lirios-branco.webp"
       }
     ]
   },
   {
     "id": "jardim-azul-1",
-    "name": "Jardim Azul — Opção 1",
+    "name": "Jardim Azul — Tulipas",
     "description": "",
     "category": {
       "id": "arranjos",
       "name": "Arranjos"
     },
     "price": 129.9,
-    "image": "/catalog/jardim-azul/opcao-1.webp",
+    "image": "/products/jardim-azul-1.webp",
     "sellable": true,
     "collections": [
       {
@@ -489,14 +513,14 @@
   },
   {
     "id": "jardim-azul-2",
-    "name": "Jardim Azul — Opção 2",
+    "name": "Jardim Azul — Lírios Azuis",
     "description": "",
     "category": {
       "id": "arranjos",
       "name": "Arranjos"
     },
     "price": 159.9,
-    "image": "/catalog/jardim-azul/opcao-2.webp",
+    "image": "/products/jardim-azul-2.webp",
     "sellable": true,
     "collections": [
       {
@@ -507,14 +531,14 @@
   },
   {
     "id": "jardim-azul-3",
-    "name": "Jardim Azul — Opção 3",
+    "name": "Jardim Azul — Lírio Branco e Azul",
     "description": "",
     "category": {
       "id": "arranjos",
       "name": "Arranjos"
     },
     "price": 179.9,
-    "image": "/catalog/jardim-azul/opcao-3.webp",
+    "image": "/products/jardim-azul-3.webp",
     "sellable": true,
     "collections": [
       {
@@ -532,7 +556,7 @@
       "name": "Luminárias"
     },
     "price": 89.9,
-    "image": "/catalog/flor-de-lotus/azul.webp",
+    "image": "/products/lotus-azul.webp",
     "sellable": true,
     "collections": [
       {
@@ -543,23 +567,28 @@
     "variants": [
       {
         "id": "azul",
-        "name": "Azul"
+        "name": "Azul",
+        "image": "/products/lotus-azul.webp"
       },
       {
         "id": "roxo",
-        "name": "Roxo"
+        "name": "Roxo",
+        "image": "/products/lotus-roxo.webp"
       },
       {
         "id": "amarelo",
-        "name": "Amarelo"
+        "name": "Amarelo",
+        "image": "/products/lotus-amarelo.webp"
       },
       {
         "id": "vermelho",
-        "name": "Vermelho"
+        "name": "Vermelho",
+        "image": "/products/lotus-vermelho.webp"
       },
       {
         "id": "verde",
-        "name": "Verde"
+        "name": "Verde",
+        "image": "/products/lotus-verde.webp"
       }
     ]
   }

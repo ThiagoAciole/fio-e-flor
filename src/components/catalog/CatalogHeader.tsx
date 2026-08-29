@@ -1,8 +1,19 @@
+import { AppLink, useNavigation } from "../../app/navigation";
 import { storeConfig } from "../../config/store";
+import { cn } from "../../lib/utils";
 import { Button } from "../ui/button";
 import { InstagramIcon, WhatsAppIcon } from "../icons/SocialIcons";
 
 export function CatalogHeader() {
+  const { pathname } = useNavigation();
+  const navLinkClass = (path: string, className = "") =>
+    cn(
+      "rounded-full px-2 py-2 text-sm font-medium transition-colors sm:px-3",
+      pathname === path
+        ? "bg-[var(--primary)] text-white"
+        : "text-[var(--text-secondary)] hover:bg-[var(--surface-soft)] hover:text-[var(--primary)]",
+      className,
+    );
   return (
     <header className="bg-[var(--background)]">
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-4 py-3 sm:px-6 sm:py-4">
@@ -13,7 +24,28 @@ export function CatalogHeader() {
             className="h-10 w-auto max-w-36 object-contain object-left sm:h-11 sm:max-w-40"
           />
         </a>
-        <div className="flex gap-0.5 sm:gap-2">
+        <div className="flex items-center gap-0.5 sm:gap-2">
+          <nav className="flex items-center gap-1" aria-label="Navegação principal">
+            <AppLink
+              to="/"
+              className={navLinkClass("/", "hidden md:inline")}
+            >
+              Início
+            </AppLink>
+            <AppLink
+              to="/catalogo"
+              className={navLinkClass("/catalogo")}
+            >
+              Catálogo
+            </AppLink>
+            <AppLink
+              to="/sobre"
+              className={navLinkClass("/sobre")}
+            >
+              <span className="sm:hidden">Sobre</span>
+              <span className="hidden sm:inline">Sobre a Fio &amp; Flor</span>
+            </AppLink>
+          </nav>
           <Button asChild variant="ghost" className="size-11 rounded-full p-0">
             <a
               href={storeConfig.instagram}
