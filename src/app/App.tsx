@@ -2,7 +2,6 @@ import { useMemo, useState } from "react";
 import { toast } from "sonner";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { CatalogHeader } from "../components/catalog/CatalogHeader";
-import { CatalogHero } from "../components/catalog/CatalogHero";
 import { CatalogEmptyState } from "../components/catalog/CatalogEmptyState";
 import { ProductFilters } from "../components/catalog/ProductFilters";
 import { ProductGrid } from "../components/catalog/ProductGrid";
@@ -15,11 +14,7 @@ import { useCart } from "../hooks/useCart";
 import { cartQuantity, cartTotal } from "../features/cart/cart.selectors";
 import type { Product } from "../types/product";
 
-type AppProps = {
-  catalogOnly?: boolean;
-};
-
-export default function App({ catalogOnly = false }: AppProps) {
+export default function App() {
   const {
     filter,
     setFilter,
@@ -68,15 +63,12 @@ export default function App({ catalogOnly = false }: AppProps) {
   return (
     <div className="site-shell min-h-svh">
       <CatalogHeader />
-      {!catalogOnly && <CatalogHero />}
       <main
         className={`mx-auto max-w-[1200px] px-4 sm:px-6 ${itemCount ? "pb-28" : ""}`}
       >
-        {catalogOnly && (
-          <h1 className="pt-10 pb-3 font-serif text-4xl font-bold leading-[1.2] tracking-[-.04em] text-[var(--primary)] sm:pt-14 sm:text-5xl">
-            Catálogo
-          </h1>
-        )}
+        <h1 className="pt-10 pb-3 font-serif text-4xl font-bold leading-[1.2] tracking-[-.04em] text-[var(--primary)] sm:pt-14 sm:text-5xl">
+          Catálogo
+        </h1>
         <ProductFilters
           active={filter}
           onChange={setFilter}

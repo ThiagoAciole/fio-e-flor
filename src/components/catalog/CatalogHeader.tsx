@@ -6,10 +6,11 @@ import { InstagramIcon, WhatsAppIcon } from "../icons/SocialIcons";
 
 export function CatalogHeader() {
   const { pathname } = useNavigation();
+  const isCatalog = pathname === "/" || pathname === "/catalogo";
   const navLinkClass = (path: string, className = "") =>
     cn(
       "rounded-full px-2 py-2 text-sm font-medium transition-colors sm:px-3",
-      pathname === path
+      (path === "/" ? isCatalog : pathname === path)
         ? "bg-[var(--primary)] text-white"
         : "text-[var(--text-secondary)] hover:bg-[var(--surface-soft)] hover:text-[var(--primary)]",
       className,
@@ -28,13 +29,7 @@ export function CatalogHeader() {
           <nav className="flex items-center gap-0 sm:gap-1" aria-label="Navegação principal">
             <AppLink
               to="/"
-              className={navLinkClass("/", "hidden md:inline")}
-            >
-              Início
-            </AppLink>
-            <AppLink
-              to="/catalogo"
-              className={navLinkClass("/catalogo")}
+              className={navLinkClass("/")}
             >
               Catálogo
             </AppLink>

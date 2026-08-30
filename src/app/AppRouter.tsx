@@ -7,7 +7,7 @@ function Routes() {
   const { pathname } = useNavigation();
 
   if (pathname === "/sobre") return <AboutPage />;
-  return <App catalogOnly={pathname === "/catalogo"} />;
+  return <App />;
 }
 
 export function AppRouter() {
