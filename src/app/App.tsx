@@ -58,6 +58,12 @@ export default function App({ catalogOnly = false }: AppProps) {
     setFilter({ type: "all" });
     setQuery("");
   };
+  const pageNumbers = Array.from({ length: pageCount }, (_, index) => index + 1);
+  const mobileFirstPage = Math.min(
+    Math.max(1, page - 1),
+    Math.max(1, pageCount - 3),
+  );
+  const mobilePageNumbers = pageNumbers.slice(mobileFirstPage - 1, mobileFirstPage + 3);
 
   return (
     <div className="site-shell min-h-svh">
@@ -95,7 +101,7 @@ export default function App({ catalogOnly = false }: AppProps) {
           )}
           {filteredProducts.length > 10 && (
             <nav
-              className="mt-8 flex flex-wrap items-center justify-center gap-2"
+              className="mt-8 flex items-center justify-center gap-1.5 sm:gap-2"
               aria-label="Paginação do catálogo"
             >
               <button
@@ -103,29 +109,27 @@ export default function App({ catalogOnly = false }: AppProps) {
                 onClick={() => setPage(page - 1)}
                 disabled={page === 1}
                 aria-label="Página anterior"
-                className="grid size-11 place-items-center rounded-full bg-[#f6f1ef] text-[var(--text-secondary)] transition-colors hover:bg-[var(--secondary)] disabled:cursor-not-allowed disabled:opacity-40"
+                className="grid size-10 shrink-0 place-items-center rounded-full bg-[#f6f1ef] text-[var(--text-secondary)] transition-colors hover:bg-[var(--secondary)] disabled:cursor-not-allowed disabled:opacity-40 sm:size-11"
               >
                 <ChevronLeft size={18} />
               </button>
-              {Array.from({ length: pageCount }, (_, index) => index + 1).map(
-                (pageNumber) => (
+              {pageNumbers.map((pageNumber) => (
                   <button
                     key={pageNumber}
                     type="button"
                     onClick={() => setPage(pageNumber)}
                     aria-current={pageNumber === page ? "page" : undefined}
-                    className={`size-11 rounded-full text-sm font-medium transition-colors ${pageNumber === page ? "bg-[var(--primary)] text-white" : "bg-[#f6f1ef] text-[var(--text-secondary)] hover:bg-[var(--secondary)]"}`}
+                    className={`${mobilePageNumbers.includes(pageNumber) ? "inline-grid" : "hidden sm:inline-grid"} size-10 shrink-0 place-items-center rounded-full text-sm font-medium transition-colors sm:size-11 ${pageNumber === page ? "bg-[var(--primary)] text-white" : "bg-[#f6f1ef] text-[var(--text-secondary)] hover:bg-[var(--secondary)]"}`}
                   >
                     {pageNumber}
                   </button>
-                ),
-              )}
+                ))}
               <button
                 type="button"
                 onClick={() => setPage(page + 1)}
                 disabled={page === pageCount}
                 aria-label="Próxima página"
-                className="grid size-11 place-items-center rounded-full bg-[#f6f1ef] text-[var(--text-secondary)] transition-colors hover:bg-[var(--secondary)] disabled:cursor-not-allowed disabled:opacity-40"
+                className="grid size-10 shrink-0 place-items-center rounded-full bg-[#f6f1ef] text-[var(--text-secondary)] transition-colors hover:bg-[var(--secondary)] disabled:cursor-not-allowed disabled:opacity-40 sm:size-11"
               >
                 <ChevronRight size={18} />
               </button>

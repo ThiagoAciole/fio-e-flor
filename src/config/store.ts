@@ -3,5 +3,5 @@ export const storeConfig = {
   city: "Campina Grande – PB",
   instagram: "https://instagram.com/fioeflorbr",
   instagramHandle: "@fioeflorbr",
-  whatsappNumber: "5583987791827",
+  whatsappNumber: "558381916221",
 };

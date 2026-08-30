@@ -16,16 +16,16 @@ export function CatalogHeader() {
     );
   return (
     <header className="bg-[var(--background)]">
-      <div className="mx-auto flex max-w-[1200px] items-center justify-between px-4 py-3 sm:px-6 sm:py-4">
+      <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-2 px-3 py-3 sm:px-6 sm:py-4">
         <a href="#catalogo" aria-label="Ir para o catálogo da Fio &amp; Flor">
           <img
             src="/fio-flor-logo.svg"
             alt="Fio &amp; Flor"
-            className="h-10 w-auto max-w-36 object-contain object-left sm:h-11 sm:max-w-40"
+            className="h-8 w-auto max-w-24 object-contain object-left sm:h-11 sm:max-w-40"
           />
         </a>
-        <div className="flex items-center gap-0.5 sm:gap-2">
-          <nav className="flex items-center gap-1" aria-label="Navegação principal">
+        <div className="flex shrink-0 items-center gap-0.5 sm:gap-2">
+          <nav className="flex items-center gap-0 sm:gap-1" aria-label="Navegação principal">
             <AppLink
               to="/"
               className={navLinkClass("/", "hidden md:inline")}
@@ -46,7 +46,7 @@ export function CatalogHeader() {
               <span className="hidden sm:inline">Sobre a Fio &amp; Flor</span>
             </AppLink>
           </nav>
-          <Button asChild variant="ghost" className="size-11 rounded-full p-0">
+          <Button asChild variant="ghost" className="size-10 rounded-full p-0 sm:size-11">
             <a
               href={storeConfig.instagram}
               target="_blank"
@@ -56,7 +56,7 @@ export function CatalogHeader() {
               <InstagramIcon size={21} />
             </a>
           </Button>
-          <Button asChild variant="ghost" className="size-11 rounded-full p-0">
+          <Button asChild variant="ghost" className="size-10 rounded-full p-0 sm:size-11">
             <a
               href={`https://wa.me/${storeConfig.whatsappNumber}`}
               target="_blank"
