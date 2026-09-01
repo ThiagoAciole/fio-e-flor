@@ -36,101 +36,6 @@
     ]
   },
   {
-    "id": "lirio-unitario",
-    "name": "Lírio Unitário",
-    "description": "",
-    "category": {
-      "id": "flores",
-      "name": "Flores"
-    },
-    "price": 15.9,
-    "image": "/products/lirios-uniti-rosa.webp",
-    "sellable": true,
-    "collections": [
-      {
-        "id": "lirios",
-        "name": "Lírios"
-      }
-    ],
-    "variants": [
-      {
-        "id": "rosa",
-        "name": "Rosa",
-        "image": "/products/lirios-uniti-rosa.webp"
-      },
-      {
-        "id": "vermelho",
-        "name": "Vermelho",
-        "image": "/products/lirios-uniti-vermelho.webp"
-      },
-      {
-        "id": "amarelo",
-        "name": "Amarelo",
-        "image": "/products/lirios-uniti-amarelo.webp"
-      },
-      {
-        "id": "verde",
-        "name": "Verde",
-        "image": "/products/lirios-uniti-verde.webp"
-      },
-      {
-        "id": "azul-claro",
-        "name": "Azul claro",
-        "image": "/products/lirios-uniti-azul.webp"
-      },
-      {
-        "id": "lilas",
-        "name": "Lilás",
-        "image": "/products/lirios-uniti-lilas.webp"
-      },
-      {
-        "id": "roxo",
-        "name": "Roxo",
-        "image": "/products/lirios-uniti-roxo.webp"
-      },
-      {
-        "id": "branco",
-        "name": "Branco",
-        "image": "/products/lirios-uniti-branco.webp"
-      },
-      {
-        "id": "rosa-com-branco",
-        "name": "Rosa com branco",
-        "image": "/products/lirios-uniti-br-rosa.webp"
-      },
-      {
-        "id": "vermelho-com-branco",
-        "name": "Vermelho com branco",
-        "image": "/products/lirios-uniti-br-vermelho.webp"
-      },
-      {
-        "id": "amarelo-com-branco",
-        "name": "Amarelo com branco",
-        "image": "/products/lirios-uniti-br-amarelo.webp"
-      },
-      {
-        "id": "verde-com-branco",
-        "name": "Verde com branco",
-        "image": "/products/lirios-uniti-br-verde.webp"
-      },
-      {
-        "id": "azul-claro-com-branco",
-        "name": "Azul claro com branco",
-        "image": "/products/lirios-uniti-br-azul.webp"
-      },
-      {
-        "id": "lilas-com-branco",
-        "name": "Lilás com branco",
-        "image": "/products/lirios-uniti-br-lilas.webp"
-      },
-      {
-        "id": "roxo-com-branco",
-        "name": "Roxo com branco",
-        "image": "/products/lirios-uniti-br-roxo.webp"
-      }
-    ]
-  },
-  {
     "id": "chaveiro-girassol",
     "name": "Chaveiro Girassol",
     "description": "",
@@ -243,6 +148,36 @@
         "name": "Enrolados"
       }
     ]
+  },
+  {
+    "id": "buque-invencivel",
+    "name": "Buquê Invencível",
+    "description": "",
+    "category": {
+      "id": "buques",
+      "name": "Buquês"
+    },
+    "price": 109.9,
+    "image": "/products/buque-invencivel.webp",
+    "sellable": true,
+    "collections": [
+      {
+        "id": "tematicos",
+        "name": "Temáticos"
+      }
+    ]
+  },
+  {
+    "id": "buque-aconchego",
+    "name": "Buquê Aconchego",
+    "description": "",
+    "category": {
+      "id": "buques",
+      "name": "Buquês"
+    },
+    "price": 129.0,
+    "image": "/products/buque-aconchego.webp",
+    "sellable": true
   },
   {
     "id": "enrolados-vaso",
@@ -462,6 +397,11 @@
         "image": "/products/buque-lirios-amarelo.webp"
       },
       {
+        "id": "vinho",
+        "name": "Vinho",
+        "image": "/products/buque-lirios-vinho.webp"
+      },
+      {
         "id": "verde",
         "name": "Verde",
         "image": "/products/buque-lirios-verde.webp"
@@ -591,5 +531,29 @@
         "image": "/products/lotus-verde.webp"
       }
     ]
+  },
+  {
+    "id": "jarro-tulipa-de-amor",
+    "name": "Jarro Tulipa de Amor",
+    "description": "",
+    "category": {
+      "id": "arranjos",
+      "name": "Arranjos"
+    },
+    "price": 40.0,
+    "image": "/products/jarro-tulipa-de-amor.webp",
+    "sellable": true
+  },
+  {
+    "id": "buque-personalizado",
+    "name": "Buquê Personalizado — Do Seu Jeito",
+    "description": "",
+    "category": {
+      "id": "buques",
+      "name": "Buquês"
+    },
+    "price": 109.9,
+    "image": "/products/buque-personalizado.webp",
+    "sellable": true
   }
 ]
